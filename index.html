@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Picture-In-Picture</title>
     <link rel="icon" type="image/svg" href="assets/favicon.svg" />
 
     <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
@@ -17,7 +17,41 @@
     />
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body>
+  <body class="bg-secondary w-full h-full flex flex-auto flex-col">
+    <!-- Header -->
+    <div
+      id="headerContainer"
+      class="bg-primary h-auto w-full flex p-2 justify-center"
+    >
+      <div
+        id="header"
+        class="flex text-4xl md:text-5xl font-semibold text-lightGray"
+      >
+        Picture In Picture
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div
+      id="maincontainer"
+      class="flex w-full h-full justify-center items-center"
+    >
+      <div
+        id="startbtn"
+        class="flex w-screen h-full mt-72 items-center justify-center"
+      >
+        <button
+          id="playbutton"
+          class="text-lightGray rounded-md px-6 text-center py-1 font-semibold text-2xl bg-blue-600 hover:bg-blue-700 active:bg-primary transition-colors duration-200 transform active:translate-y-1"
+        >
+          Start <i class="fa-solid fa-circle-play"></i>
+        </button>
+      </div>
+    </div>
+    <div id="videoPlayer">
+      <video id="video" controls height="360" width="640" hidden></video>
+    </div>
+
     <!-- Script -->
     <script src="script.js"></script>
   </body>
