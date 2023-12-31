@@ -41,15 +41,21 @@
         class="flex w-screen h-full mt-72 items-center justify-center"
       >
         <button
+          id="selectscreen"
+          class="text-lightGray rounded-md px-6 text-center py-1 mx-1 font-semibold text-2xl bg-blue-600 hover:bg-blue-700 active:bg-primary transition-colors duration-200 transform active:translate-y-1"
+        >
+          Select <i class="fa-solid fa-circle-check"></i>
+        </button>
+        <button
           id="playbutton"
-          class="text-lightGray rounded-md px-6 text-center py-1 font-semibold text-2xl bg-blue-600 hover:bg-blue-700 active:bg-primary transition-colors duration-200 transform active:translate-y-1"
+          class="text-lightGray rounded-md px-6 mx-1 text-center py-1 font-semibold text-2xl bg-blue-600 hover:bg-blue-700 active:bg-primary transition-colors duration-200 transform active:translate-y-1"
         >
           Start <i class="fa-solid fa-circle-play"></i>
         </button>
       </div>
     </div>
     <div id="videoPlayer">
-      <video id="video" controls height="360" width="640" hidden></video>
+      <video id="playvideo" controls height="360" width="600" hidden></video>
     </div>
 
     <!-- Script -->
